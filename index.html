@@ -5,64 +5,115 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bitanic — Privacy Policy</title>
 <style>
-  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-         max-width: 760px; margin: 40px auto; padding: 0 20px; color: #1c1c1e; line-height: 1.6; }
-  h1 { font-size: 1.8rem; } h2 { font-size: 1.2rem; margin-top: 1.6em; }
-  code { background: #f2f2f7; padding: 1px 5px; border-radius: 4px; }
-  .muted { color: #6b6b70; font-size: 0.9rem; }
+  :root { --green:#3a7d3a; --dark:#274b1f; --paper:#f4f1e4; --ink:#2b2b2b; --card:#fffdf6; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--paper); color: var(--ink); line-height: 1.65;
+    margin: 0; padding: 32px 20px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 28px; }
+  header .leaf { font-size: 48px; line-height: 1; }
+  header h1 { font-size: 32px; margin: 8px 0 2px; color: var(--dark); letter-spacing: 1px; }
+  header .tag { font-size: 15px; color: var(--green); margin: 0; font-weight: 600; }
+  .card {
+    background: var(--card); border: 1.5px solid #e3ddc8; border-radius: 16px;
+    padding: 28px 30px; box-shadow: 0 4px 0 #e3ddc8;
+  }
+  .muted { color: #8a8576; font-size: 0.9rem; margin-top: 0; }
+  h2 {
+    font-size: 1.15rem; color: var(--dark); margin: 1.8em 0 .4em;
+    padding-bottom: .3em; border-bottom: 1.5px solid #efe9d8;
+  }
+  h2:first-of-type { margin-top: .6em; }
+  p { margin: .6em 0; }
+  a { color: var(--green); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { background: var(--paper); padding: 1px 6px; border-radius: 5px; font-size: 0.9em; }
+  ul { padding-left: 1.2em; }
+  li { margin: .25em 0; }
+  footer { text-align: center; margin-top: 28px; }
+  .btn {
+    display: inline-block; background: var(--green); color: #fff; text-decoration: none;
+    padding: 12px 24px; border-radius: 12px; font-weight: 600; font-size: 15px;
+    box-shadow: 0 3px 0 var(--dark); transition: transform .1s;
+  }
+  .btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--dark); }
+  .home { display: inline-block; margin-bottom: 14px; font-size: 14px; }
+  .copy { margin-top: 22px; font-size: 12px; color: #aaa; }
 </style>
 </head>
 <body>
-<h1>Privacy Policy — Bitanic</h1>
-<p class="muted">Last updated: 15 June 2026</p>
+<div class="wrap">
 
-<p>Bitanic ("the app", "we", "us") is a casual plant-care game. This policy explains
-what data is handled when you use the app. We have tried to keep it simple and honest.</p>
+  <header>
+    <div class="leaf">🪴</div>
+    <h1>Bitanic</h1>
+    <p class="tag">Privacy Policy</p>
+  </header>
 
-<h2>1. Data we collect ourselves</h2>
-<p><strong>None that leaves your device for our own use.</strong> The app has no user
-accounts and no login. All your game progress (plants, coins, settings) is stored
-<strong>locally on your device</strong> and is not sent to us or to any server we control.</p>
+  <div class="card">
+    <p class="muted">Last updated: 15 June 2026</p>
 
-<h2>2. Data collected by advertising (Google AdMob)</h2>
-<p>Bitanic shows ads through <strong>Google AdMob</strong>. To serve and measure ads,
-Google may collect and process:</p>
-<ul>
-  <li>Device identifiers (e.g. the advertising identifier / Device ID)</li>
-  <li>Advertising and product-interaction data (e.g. ads viewed or tapped)</li>
-  <li>Crash and performance/diagnostic data</li>
-</ul>
-<p>This data may be used for third-party advertising, measurement and analytics. Google's
-handling of this data is described in
-<a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and
-<a href="https://support.google.com/admob/answer/6128543">Google AdMob's policies</a>.</p>
+    <p>Bitanic ("the app", "we", "us") is a casual plant-care game. This policy explains
+    what data is handled when you use the app. We have tried to keep it simple and honest.</p>
 
-<h2>3. App Tracking Transparency (ATT)</h2>
-<p>On first launch the app asks for your permission to track (the iOS ATT prompt).
-If you decline, you will still see ads, but they will be non-personalized. You can change
-this at any time in <em>Settings → Privacy &amp; Security → Tracking</em>.</p>
+    <h2>1. Data we collect ourselves</h2>
+    <p><strong>None that leaves your device for our own use.</strong> The app has no user
+    accounts and no login. All your game progress (plants, coins, settings) is stored
+    <strong>locally on your device</strong> and is not sent to us or to any server we control.</p>
 
-<h2>4. Purchases</h2>
-<p>In-app purchases (e.g. remove ads, coins) are processed by <strong>Apple</strong> through
-the App Store. We never see or store your payment details. Apple's handling is covered by
-Apple's own privacy policy.</p>
+    <h2>2. Data collected by advertising (Google AdMob)</h2>
+    <p>Bitanic shows ads through <strong>Google AdMob</strong>. To serve and measure ads,
+    Google may collect and process:</p>
+    <ul>
+      <li>Device identifiers (e.g. the advertising identifier / Device ID)</li>
+      <li>Advertising and product-interaction data (e.g. ads viewed or tapped)</li>
+      <li>Crash and performance/diagnostic data</li>
+    </ul>
+    <p>This data may be used for third-party advertising, measurement and analytics. Google's
+    handling of this data is described in
+    <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and
+    <a href="https://support.google.com/admob/answer/6128543">Google AdMob's policies</a>.</p>
 
-<h2>5. Children</h2>
-<p>Bitanic is family-friendly and does not knowingly collect personal information from
-children. Ads are configured to be served in line with Google's and Apple's policies.</p>
+    <h2>3. App Tracking Transparency (ATT)</h2>
+    <p>On first launch the app asks for your permission to track (the iOS ATT prompt).
+    If you decline, you will still see ads, but they will be non-personalized. You can change
+    this at any time in <em>Settings → Privacy &amp; Security → Tracking</em>.</p>
 
-<h2>6. Your choices</h2>
-<ul>
-  <li>Turn off ad tracking via the iOS ATT prompt or iOS Settings.</li>
-  <li>Purchase "Remove Ads" to stop banner ads.</li>
-  <li>Delete the app to remove all locally-stored game data.</li>
-</ul>
+    <h2>4. Purchases</h2>
+    <p>In-app purchases (e.g. remove ads, coins) are processed by <strong>Apple</strong> through
+    the App Store. We never see or store your payment details. Apple's handling is covered by
+    Apple's own privacy policy.</p>
 
-<h2>7. Changes</h2>
-<p>We may update this policy. Material changes will be reflected on this page with a new
-"last updated" date.</p>
+    <h2>5. Children</h2>
+    <p>Bitanic is family-friendly and does not knowingly collect personal information from
+    children. Ads are configured to be served in line with Google's and Apple's policies.</p>
 
-<h2>8. Contact</h2>
-<p>Questions? Email: <strong>bilowicz@gmail.com</strong></p>
+    <h2>6. Your choices</h2>
+    <ul>
+      <li>Turn off ad tracking via the iOS ATT prompt or iOS Settings.</li>
+      <li>Purchase "Remove Ads" to stop banner ads.</li>
+      <li>Delete the app to remove all locally-stored game data.</li>
+    </ul>
+
+    <h2>7. Changes</h2>
+    <p>We may update this policy. Material changes will be reflected on this page with a new
+    "last updated" date.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions? Email: <strong>bilowicz@gmail.com</strong></p>
+  </div>
+
+  <footer>
+    <a class="btn" href="https://apps.apple.com/app/bitanic/id6779795522">Download on the App Store</a>
+    <div class="copy">
+      <a class="home" href="https://jobahazi.github.io">← Back to Bitanic</a><br>
+      © 2026 Miłosz Bilowicz
+    </div>
+  </footer>
+
+</div>
 </body>
 </html>
